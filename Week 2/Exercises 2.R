@@ -6,11 +6,11 @@
 
 ## Load Packages
 
-# install.packages("tree")
+ install.packages("tree")
 # install.packages("ISLR")
 # 
-# library(tree)
-# library(ISLR)
+ library(tree)
+ library(ISLR)
 
 ## Load Data
 data(Carseats)

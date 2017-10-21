@@ -222,7 +222,7 @@ lm.crim.all <- lm(crim~., data=Boston)
 logistic.crim <- glm(crim01 ~ .-crim, data=Boston.Train, family=binomial)
 
 Boston.Test.Pred <- rep(0,nrow(Boston.Test))
-Boston.Test.Probs <- predict(logistic.crim.sig3, type="response", newdata=Boston.Test)
+Boston.Test.Probs <- predict(logistic.crim, type="response", newdata=Boston.Test)
 Boston.Test.Pred[Boston.Test.Probs>=0.5] <- 1
 
 Boston.Test.Actual <- Boston.Test$crim01
